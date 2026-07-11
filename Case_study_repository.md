@@ -1,4 +1,4 @@
-# Banco Preliminar de Casos — Toma de Decisiones Asistida con IA
+# Case study repository — Research: MCDA with AI
 
 El estudio sigue un diseño experimental **comparativo y exploratorio**, donde se evaluará el comportamiento de distintos modelos de IA generativa frente a un conjunto estandarizado de problemas de decisión multicriterio.
 
@@ -11,24 +11,24 @@ Se desarrollarán, aproximadamente, ocho casos de decisión distribuidos en cuat
 | Nivel | Características |
 |---|---|
 | Nivel 1 | Información completa y criterios objetivos. |
-| Nivel 2 | Múltiples preferencias y compensaciones (*trade-offs*). |
+| Nivel 2 | Múltiples preferencias y _trade-offs_ |
 | Nivel 3 | Riesgo con probabilidades conocidas. |
 | Nivel 4 | Alta incertidumbre e información incompleta. |
 
 ## 2. Prompts
 
-Cada caso tendrá dos prompts base estandarizados. El primer tipo será **ambiguo**, sólo con los datos primordiales; el segundo tipo será **más específico**, con datos, preferencias y detalles. Después, si el periodo de tiempo alcanza, se generarán variaciones para estudiar el **efecto de framing** (cómo el contexto y las palabras moldean la manera en que se percibe o entiende la información). Ejemplos de variaciones: cambiar el orden de la información, el orden de las alternativas, modificar ligeramente la redacción, o presentar primero los beneficios o los riesgos.
+Cada caso tendrá dos prompts base estandarizados. El primer tipo será **ambiguo**, sólo con los datos primordiales; el segundo tipo será **más específico**, con datos, preferencias y detalles. Después, si el periodo de tiempo alcanza, se generarán variaciones para estudiar el **efecto _framing_** (cómo el contexto y las palabras moldean la manera en que se percibe o entiende la información). Ejemplos de variaciones: cambiar el orden de la información, el orden de las alternativas, modificar ligeramente la redacción, o presentar primero los beneficios o los riesgos.
 
 En cuanto a la metodología de los prompts, ambos tipos se clasifican como *zero-shot prompting* (se proveen cero ejemplos a la IA; se da directamente el escenario del problema y se pide la recomendación). El tipo 1 es un **basic zero-shot**, mientras que el tipo 2 es un **contextualised zero-shot**.
 
-- **Prompt 1 (Ambiguous).**
-- **Prompt 2 (Specific).**
+- *Prompt 1 (Ambiguous).*
+- *Prompt 2 (Specific).*
 
 > Al omitir ejemplos previos de resolución (*zero-shot*), se obliga al modelo de IA a depender exclusivamente de sus capacidades nativas de cálculo, lógica y análisis de decisión bajo incertidumbre.
 
 ---
 
-## Nivel 1 — Problemas con información completa y criterios objetivos
+## _Nivel 1. Problemas con información completa y criterios objetivos_
 
 ### Problema 1
 
@@ -206,7 +206,7 @@ $$V(A_i) = \sum_{j=1}^{n} w_j \cdot V_j(x_{ij})$$
 
 ---
 
-## Nivel 2 — Problemas con preferencias y compensaciones entre objetivos
+## _Nivel 2. Problemas con preferencias y compensaciones entre objetivos_
 
 ### Problema 1 — "The summer job"
 
@@ -326,7 +326,7 @@ $$C_i = \frac{S_i^-}{S_i^+ + S_i^-}$$
 
 ---
 
-## Nivel 3 — Problemas con riesgo y probabilidades
+## _Nivel 3. Problemas con riesgo y probabilidades_
 
 ### Problema 1 — "Risk"
 
@@ -394,7 +394,7 @@ Un recién graduado no está seguro de qué decisión tomar: hacer un posgrado o
 
 ---
 
-## Nivel 4 — Problemas con alta incertidumbre e información incompleta
+## _Nivel 4. Problemas con alta incertidumbre e información incompleta_
 
 ### Problema 1 — "Investing in the Stock Market, Revisited"
 
@@ -481,7 +481,7 @@ $$A2: (65{,}000 \cdot 0.30) + (45{,}000 \cdot 0.70) = \$51{,}000$$
 
 ---
 
-## Referencias
+## _Referencias_
 
 Clemen, R. T. (1996). *Making hard decisions: An Introduction to Decision Analysis*. South Western Educational Publishing.
 
